@@ -1,0 +1,173 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta HTTP-EQUIV="Pragma" CONTENT="no-cache">
+        <meta HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
+        <meta HTTP-EQUIV="Expires" CONTENT="0">  
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>一方の起始页</title>
+        <link type="text/css" href="Bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <script src="Bootstrap/js/jquery.min.js"></script><!--需要先引入jQuery-->
+        <script src="Bootstrap/js/bootstrap.min.js"></script>
+        <style type="text/css">
+            #copyright {
+                position: fixed;
+                width: 100%;
+                bottom: 0;
+                text-align: center;
+            }
+            #main {
+                background-size: 100%;
+                position:"relative";
+            }
+        </style>
+        <script>
+            var randomTheme = false;
+            var bodyBgs = ["image/0.png", "image/1.png", "image/2.png", "image/3.png"];
+            var navbarColor = ["#4ea1db", "#4ea1db", "#4ea1db", "white"];
+            var subTitleColor = ["#9ccfbe", "#d774ff", "#ae5a6a" ,"#707aeb"];
+            var subTitleContent = [""];
+            var randomBgIndex = 0;
+            if(randomTheme == true){//开启随机主题
+                randomBgIndex = Math.round(Math.random() * (bodyBgs.length - 1));
+            }
+            document.write('<style> body{background:url(' + bodyBgs[randomBgIndex] + ');}');//输出随机的背景图
+            document.write('a{color:' + navbarColor[randomBgIndex] + ';}');//修改导航栏对应的字体颜色
+            //document.write('#mainTitle{color:' + navbarColor[randomBgIndex] + ';opacity:0.7;}');
+            document.write('#mainTitle{color:white;}');
+            document.write('#subTitle{color:#b8b8b8;opacity:0.9;}</style>');
+        </script>
+    </head>
+    <body id="main">
+        <div class="container">
+            <div class="row">
+                <div class="span6">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="https://gnafiy.site" target="_blank">个人网站</a></li>
+                        <li><a href="https://www.bilibili.com/" target="_blank">bilibili</a></li>
+                        <li><a href="https://v3.bootcss.com/" target="_blank">Bootstrap</a></li>
+                        <li class="dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">CSGO相关<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="https://prosettings.net/counterstrike/" target="_blank">CS:GO prosettings</a></li>
+                                <li><a href="https://lkcsgo.com/" target="_blank">投掷物查询</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li class="dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">galgame会社官网<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="https://august-soft.com/" target="_blank">August</a></li>
+                                <li><a href="http://www.yuzu-soft.com/" target="_blank">Yuzusoft</a></li>
+                                <li><a href="https://key.visualarts.gr.jp/" target="_blank">Key</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="https://github.com/" target="_blank">github</a></li>
+                        <li><a href="https://dash.ibcn.space/" target="_blank">IBCN</a></li>
+                        <li><a href="https://zh.moegirl.org.cn/" target="_blank">萌娘百科</a></li>
+                        <li class="dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">上课相关<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="https://mis.bjtu.edu.cn/" target="_blank">教务处</a></li>
+                                <li><a href="https://www.icourse163.org/" target="_blank">MOOC</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">刷题网站<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="https://www.acwing.com/" target="_blank">AcWing</a></li>
+                                <li><a href="https://leetcode-cn.com/" target="_blank">LeetCode</a></li>
+                                <li><a href="https://www.lintcode.com/" target="_blank">LintCode</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="https://citel.bjtu.edu.cn/acm/" target="_blank">BJTU ACM</a></li>
+                                <li><a href="http://algo.bjtu.edu.cn/" target="_blank">BJTU ALGO</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="https://vndb.org/" target="_blank">VNDB</a></li>
+                        <li class="dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">资源站<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="https://bookwalker.jp/" target="_blank">BookWalker</a></li>
+                                <li><a href="https://www.dlsite.com/" target="_blank">DLsite</a></li>
+                                <li><a href="https://dlsoft.dmm.co.jp/" target="_blank">DMM</a></li>
+                                <li><a href="https://store.hikarifield.co.jp/" target="_blank">HikariField</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="https://www.kfmax.com/" target="_blank">绯月</a></li>
+                                <li><a href="https://bbs.zdfx.net/" target="_blank">终点分享</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div><!-- /span6 -->
+            </div><!-- /row -->
+        </div><!-- /container -->
+        <div class="container-fluid" style="padding-top:5%;">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3" style="text-align: center;">
+                    <h1 id="mainTitle">睡觉真的是太舒服了</h1>
+                    <h4 id="subTitle">The only source of knowledge is experience.</h4>
+                </div>
+            </div>
+            </br>
+            <form style="padding-top:3%;">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="input-group" style="opacity: 50%;">
+                                <span class="input-group-btn"> 
+                                    <div class="dropdown">
+                                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Engine<span class="caret"></span></button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                            <li><a href="?engine=Baidu">Baidu</a></li>
+                                            <li><a href="?engine=bilibili">bilibili</a></li>
+                                            <li><a href="?engine=Bing">Bing</a></li>
+                                            <li><a href="?engine=CSDN">CSDN</a></li>
+                                            <li><a href="?engine=Google">Google</a></li>
+                                            <li role="separator" class="divider"></li>
+                                            <li><a href="?engine=asklib">问答库</a></li>
+                                            <li><a href="?engine=WolframAlpha">WolframAlpha</a></li>
+                                        </ul>
+                                    </div>
+                                </span>
+                                <input type="text" class="form-control" placeholder="What are you looking for?" id="SearchToolbars" autocomplete="off">
+                                <span class="input-group-btn">
+                                    <div class="btn-group-horizontal">
+                                        <button class="btn btn-primary" type="submit" onclick="search()">Search</button>
+                                    </div>
+                                </span>
+                            </div><!-- /input-group -->
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div id = "copyright"><h6><!--<script>document.write(randomTheme == true ? "随机主题功能已开启":"随机主题功能已关闭");</script> </br>-->Copyright © 2022 _GnafiY& Orac1e_</h6></div>
+    </body>
+    <script>
+        function search(){
+            var EngineHashTable={
+                "Baidu":"http://www.baidu.com/s?wd=",
+                "Google":"http://www.google.com/search?q=",
+                "Bing":"https://cn.bing.com/search?q=",
+                "CSDN":"https://so.csdn.net/so/search?q=",
+                "bilibili":"https://search.bilibili.com/all?keyword=",
+                "asklib":"https://www.asklib.com/s/",
+                "WolframAlpha":"https://www.wolframalpha.com/input?i=",
+            };
+            var source = window.location.href;
+            var r = window.GetRequest();
+            var para = document.getElementById("SearchToolbars").value;
+            var engine = typeof(r['engine']) == "undefined" ? EngineHashTable['Baidu'] : EngineHashTable[r['engine']];//处理默认情况
+            window.open(engine.concat(para), '_blank');
+            window.open(source, '_self');
+            alert(source);
+        }
+        function GetRequest() {
+            var url = location.search; //获取url中"?"符后的字串
+            var theRequest = new Object();
+            if (url.indexOf("?") != -1) {
+                var str = url.substr(1);
+                strs = str.split("&");
+                for(var i = 0; i < strs.length; i ++) {
+                    theRequest[strs[i].split("=")[0]]=unescape(strs[i].split("=")[1]);
+                }
+            }
+            return theRequest;
+        }
+    </script>
+</html>
